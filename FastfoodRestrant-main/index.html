@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="homeStyle.css" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap'); </style>
+
+  </head>
+  <body>
+    <div  class="container-fluid">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light fs-6 p-2 py-3">
+        <div class="container-fluid">
+
+            <a id="NavLogo" class="navbar-brand" href="#"><img src="https://demo.webtend.net/html/qichen/assets/images/logo/logo-white.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active " href="index.html" id="navbarDropdown" > Home</a>
+                    
+                </li>
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link active " href="MenuPage/index.html" >Menu</a>
+                   
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link active" href="About-page/index.html">About</a>
+                </li>
+    
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link active " href="BlogDetailsPage/home.html" id="navbarDropdown"> Blog </a>
+                </li>
+    
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link active " href="ReservationPage/index.html" id="navbarDropdown" >Reservation</a>
+                </li>
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link active " href="ChefsPage/index.html" id="navbarDropdown" >Chefs</a>
+                   
+                </li>
+    
+                <li class="nav-item text-white mt-2">
+                    <a class="nav-link " id="NavLink" aria-current="page" href="#"><i class="fas fa-search"></i></a>
+                </li>
+                </ul>
+
+                <div class="nav-item d-flex align-items-center" id="finalItem">
+
+                  <div> <span id="NavLink" class="nav-link me-2" aria-current="page" style="cursor:pointer"><img src="call.png">
+                          &nbsp; 000(123) 456 89</span>
+                  </div>
+
+                  <div>
+                      <span><button id="NavLinkBtn" class="btn">Book A Table
+                              &nbsp;<i class="fas fa-long-arrow-right"></i></button></span>
+                  </div>
+
+              </div>
+
+            </div>
+        </div>
+    </nav>
+          <div id="mainStyle" class="row p-2 flex-column align-items-center">
+            <span class="BurgerShapeStyle d-none d-lg-block col-6">
+              <img src="https://demo.webtend.net/html/qichen/assets/images/hero/hero-shape-1.png" class="img-fluid" alt="">
+            </span>
+            <span class="lineShapeStyle d-none d-lg-block col-6" >
+              <img src="https://demo.webtend.net/html/qichen/assets/images/shape/line-1.png" class="img-fluid"  alt="">
+            </span>
+            
+            <div id="infoDiv" class="row flex-column-reverse flex-md-row text-center mt-5 justify-content-center align-items-center mb-5">
+              <div class="col col-lg-4  ">
+                <div id="H1div" class="d-flex flex-column">
+                  <h1 class="display-1 h1Style">Crispy</h1>
+                  <h1 class="display-1 h1Style">Chicken</h1>
+                  <h1 class="display-1 h1Style">Burgers</h1>
+                </div>
+                <p class="text mt-lg-3 fs-5"> Sit amet consectetur adipiscing Malesuada morbigrave ullamore alesuada nec pulvinar nisle</p>
+                <div class="col mt-lg-3">
+                  <img src="https://demo.webtend.net/html/qichen/assets/images/down-arrow.png"  class="me-3 h-100" alt="">
+                  <div class="Btn col mt-3 mb-lg-3 d-inline" style="z-index: 2;">
+                    <a  class="Btn px-5 py-3"  href="MenuPage/index.html">
+                      <span class="h6 ">Order Now</span>
+                      <i class="fas fa-long-arrow-right h6 "></i>
+                    </a>
+                  </div>
+                
+                </div>
+              </div>
+              <div class="col col-lg-5 " style="z-index: 1;">
+                <img id="mainImg" class="img-fluid" src="https://demo.webtend.net/html/qichen/assets/images/hero/hero-1.jpg" style="z-index: 5;">
+               
+              </div>
+
+
+            </div>
+            
+
+        
+          </div>
+
+          <!--our popular food-->
+          
+          <div id="menuDivOuter" class="row d-flex flex-column ">
+            <div id="menuDivInner" class="d-flex flex-column align-items-center"> 
+              <div class="col align-items-center text-center mt-5">
+                <p class="h4 subtitle1Before">OUR POPULAR FOOD</p>
+                <h2 class="display-6 h1Style">Best Category Foods Menu</h2>
+              </div>
+              <div class="row justify-content-center mt-5 ">
+                <div class="col-10  col-md-5 mb-3 d-flex justify-content-around col-lg-3 menuItem me-3 itemHover">
+                  <img src="https://demo.webtend.net/html/qichen/assets/images/icon/icon-1.png" alt="pizza photo">
+                  <span class="text fs-2 mt-4 ">Pizza</span>
+                    <a class="fs-3  mt-4 Astyle" href="MenuPage/index.html">
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>                  
+                  </a>
+                </div>
+                <div class="col-10 col-md-5 mb-3 col-lg-3 d-flex justify-content-around menuItem  me-3 itemHover">
+                  <img src="https://demo.webtend.net/html/qichen/assets/images/icon/icon-2.png" alt="pizza photo">
+                  <span class="text fs-2 mt-4 textHover" >Burger</span>
+                  <a class="fs-3  mt-4 Astyle aHover" href="MenuPage/index.html">
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>                  
+                  </a>
+                </div>
+                <div class="col-10  col-md-5 mb-3 col-lg-3 d-flex justify-content-around menuItem  me-3 itemHover">
+                  <img src="https://demo.webtend.net/html/qichen/assets/images/icon/icon-3.png" alt="pizza photo">
+                  <span class="text fs-2 mt-4 textHover">Bread</span>
+                  <a class="fs-3  mt-4 Astyle aHover" href="MenuPage/index.html">
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>                  
+                  </a>
+                </div>
+                <div class="col-10  col-md-5 mb-3 col-lg-3 d-flex justify-content-around menuItem  me-3 itemHover">
+                  <img src="https://demo.webtend.net/html/qichen/assets/images/icon/icon-4.png" alt="pizza photo">
+                  <span class="text fs-2 mt-4 textHover">Seafoods</span>
+                  <a class="fs-3  mt-4 Astyle aHover"href="MenuPage/index.html">
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>                  
+                  </a>
+                </div>
+                <div class="col-10  col-md-5 mb-3 col-lg-3 d-flex justify-content-around menuItem  me-3 itemHover">
+                  <img src="https://demo.webtend.net/html/qichen/assets/images/icon/icon-5.png" alt="pizza photo">
+                  <span class="text fs-2 mt-4 textHover">Coffee</span>
+                  <a class="fs-3  mt-4 Astyle aHover"href="MenuPage/index.html">
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>                  
+                  </a>
+                </div>
+                <div class="col-10  col-md-5 mb-3 col-lg-3 d-flex justify-content-around menuItem  me-3 itemHover">
+                  <img src="https://demo.webtend.net/html/qichen/assets/images/icon/icon-6.png" alt="pizza photo">
+                  <span class="text fs-2 mt-4 ">Chicken</span>
+                  <a class="fs-3  mt-4 Astyle aHover" href="MenuPage/index.html">
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>                  
+                  </a>
+                </div>
+                
+              </div>
+              <div class="col-10 col-md-5 d-flex text-center justify-content-center align-items-center mt-5 border border-white mb-5">
+                <p class="fs-5">
+                  Need any Special Food or Any Birthday Cakes? Order Now
+                </p>
+              </div>
+
+
+            </div>
+            
+
+          </div>
+
+          <!--
+            ABOUT QICHEN
+            -->
+              <div  class="row  row-cols-1 row-cols-md-2  mt-5 mb-5 justify-content-center ">
+                <div class="col col-lg-4 mb-5 ">
+                  <p class="h5 orangeText subtitleBefore mt-3 mb-3">ABOUT QICHEN</p>
+                    <h2 class="fs-1 h1Style">The Best Tasty & Yamee Food and Chief Based on Italiano</h2>                   
+                  <p class="text  fs-5">Sit amet consectetur adipiscing elitsue risus mauris quam neque adipiscing phasellus aenean ante orcirat scelerisque enim ut nulla vestibulum velvitae ut at elementum mauris, etiam ornare diame</p>
+                  <div class="col mt-3 mb-lg-3">
+                 
+                    <a  class="Btn px-5 py-3" type="button" href="About-page/index.html">
+                      <span class="h6 ">Learn More</span>
+                      <i class="fas fa-long-arrow-right h6 "></i>
+                    </a>
+                   
+                   
+                  </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 justify-content-center  align-items-center  mb-5">
+                  <div class="col mb-3 text-center">
+                    <img id="mainImg" class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/about/image-1.jpg" style="z-index: 5;">
+                    
+                  </div>
+                  <div class="col mb-sm-3 text-center">
+                    <img id="mainImg" class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/about/image-2.jpg" style="z-index: 5;">
+                    
+                  </div>
+
+                </div>
+               
+              </div>
+
+             <!--
+            best food menu
+            -->
+            <div  class="row flex-column mt-5 justify-content-center flex-lg-row mb-5">
+              <div class="col-12 me-5 text-center ">
+                <p class="h4 orangeText subtitleBefore  mb-3 removeSubtitleAfte">BEST FOOD MENU</p>
+                  <h2 class="fs-1 h1Style">Choose Your Best Menus</h2>                   
+              
+              </div>
+              <div class="col col-lg-5 d-md-none d-lg-block mt-5 mb-3 text-center ">
+                <img id="mainImg" class="img-fluid  h-100" src="	https://demo.webtend.net/html/qichen/assets/images/menu/menu-single-1.jpg" >
+              </div>
+              <div id="MenuItems" class="row row-cols-1 row-cols-md-2 row-cols-lg-1 justify-content-center mt-5 col-lg-6 ">
+                <div class="col d-flex  mt-5 mt-lg-3"><!-- burger-->
+                  <div class="col-4 col-lg-3 text-center">
+                    <img class="img-fluid" src="https://demo.webtend.net/html/qichen/assets/images/menu/thumb-1.png">
+                  </div>
+                  <div class="col-8 col-lg-8">
+                    <a class="menuLink "href="MenuPage/index.html">
+                      <h3 class="text fs-3 h1Style">Humburger------25$</h3></a> <!-- link here to menu page-->
+                    <p class="text fs-6">Roasted langoustine, consommé</p>
+                    <ul class="List">
+                      <li>
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <p class="text fs-6 light" style="display: inline; color: gray;">(5k Reviews)</p>
+                      </li>
+
+
+                    </ul>
+
+
+                  </div>
+
+                </div>
+                <div class="col d-flex mt-5"><!--Pizza-->
+                  <div class="col-4 col-lg-3 text-center">
+                    <img class="img-fluid" src="https://demo.webtend.net/html/qichen/assets/images/menu/thumb-2.png">
+                  </div>
+                  <div class="col-8 col-lg-9 ">
+                    <a class="menuLink" href="MenuPage/index.html"><h3 class="text fs-3 h1Style">Pizza-------------$63</h3></a> <!-- link here to menu page-->
+                    <p class="text fs-6">Roasted langoustine, consommé</p>
+                    <ul class="List">
+                      <li>
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <p class="text fs-6 light" style="display: inline; color: gray;">(5k Reviews)</p>
+                      </li>
+
+
+                    </ul>
+
+
+                  </div>
+
+                </div>
+                <div class="col  d-flex mt-5 mb-md-5 mb-lg-0"><!--Baked Chicken Wings-->
+                  <div class="col-4 col-lg-3 text-center">
+                    <img class="img-fluid" src="	https://demo.webtend.net/html/qichen/assets/images/menu/thumb-3.png">
+                  </div>
+                  <div class="col-8 col-lg-9">
+                    <a class="menuLink" href="MenuPage/index.html"><h3 class="text fs-3 h1Style">Baked Chicken Wings--$199</h3></a> <!-- link here to menu page-->
+                    <p class="text fs-6">Roasted langoustine, consommé</p>
+                    <ul class="List">
+                      <li>
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <p class="text fs-6 light" style="display: inline; color: gray;">(5k Reviews)</p>
+                      </li>
+
+
+                    </ul>
+
+
+                  </div>
+
+                </div>
+                <div class="col d-flex  mt-5 mb-5  mb-lg-0"><!--Seafood Pizza-->
+                  <div class="col-4 col-lg-3 text-center ">
+                    <img class="img-fluid" src="https://demo.webtend.net/html/qichen/assets/images/menu/thumb-4.png">
+                  </div>
+                  <div class="col-8 col-lg-9">
+                    <a class="menuLink" href="MenuPage/index.html"><h3 class="text fs-3 h1Style">Seafood Pizza------$120</h3></a> <!-- link here to menu page-->
+                    <p class="text fs-6">Roasted langoustine, consommé</p>
+                    <ul class="List">
+                      <li>
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li >
+                        <p class="text fs-6 light" style="display: inline; color: gray;">(5k Reviews)</p>
+                      </li>
+
+
+                    </ul>
+
+
+                  </div>
+
+                </div>
+
+              </div>
+              
+             
+            </div>
+            <!--BEST Chef-->
+            <div class="row row-cols-1 row-cols-lg-2 justify-content-center" style="background-color:#fdf1ed ;">
+              <div class=" col-lg-4 mt-5 mb-5 ">
+                <p class="h4 orangeText subtitleBefore mt-3 mb-3">Best Chefs</p>
+                  <h2 class="fs-1 h1Style">Meet Our Exclusive & Master Chefs</h2>                   
+                <ul  class="List mt-5">
+                  <li class="d-block">
+                    <i class="fa-sharp fa-solid fa-circle-check fs-5 "></i>
+                    <p class="text  fs-5  text-dark d-inline">25 Years of Experience in Restaurant Services in USA</p>
+
+                  </li>
+                  <li>
+                    <i class="fa-sharp fa-solid fa-circle-check fs-5"></i>
+                    <p class="text  fs-5  text-dark d-inline">Any Kind Of Food Made For Customer and So Much Yamee $ Testy</p>
+
+                  </li>
+                </ul>
+                <p class="text  fs-5 mt-3 text-secondary">Sit amet consectetur adipiscing elitsue risus mauris quam neque adipiscing phasellus aenean ante orcirat scelerisque enim ut nulla vestibulum velvitae ut at elementum mauris, etiam ornare diame</p>
+
+                <div class="col mt-3 mb-lg-3">
+                  <a   class="Btn px-5 py-3" type="button" href="ChefsPage/index.html">
+                    <span class="h6 ">Become A Chef</span>
+                    <i class="fas fa-long-arrow-right h6 "></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col mt-lg-5 h-100 mb-3">
+                <div class="row  row-cols-1 row-cols-sm-2 row-cols-md-3  justify-content-center h-100">
+                  <div class="col-10 col-sm mt-lg-3 position-relative container">
+                    <img class="img-fluid" src="https://demo.webtend.net/html/qichen/assets/images/team/chef-1.jpg" style="width: 100%; height: 100%;">
+                    <div class="overlay">
+                      <div class="bg-light text-dark">Jimmie K. Cryer</div>
+                      <div class="bg-orange">Senior Chef</div>
+                    </div>
+                  </div>
+                  <div class="col-10 col-sm mt-3 mt-sm-0 mt-lg-3 position-relative container">
+                    <img class="img-fluid h-100" src="https://demo.webtend.net/html/qichen/assets/images/team/chef-4.jpg" style="width: 100%; height: 100%;">
+                    <div class="overlay">
+                      <div class="bg-light text-dark">Jimmie K. Cryer</div>
+                      <div class="bg-orange">Senior Chef</div>
+                    </div>
+                  </div>
+                  <div class="col-10 col-sm mt-3  mt-md-0  mt-lg-3 position-relative container">
+                    <img class="img-fluid" src="https://demo.webtend.net/html/qichen/assets/images/team/chef-3.jpg" style="width: 100%; height: 100%;">
+                    <div class="overlay">
+                      <div class="bg-light text-dark">Jimmie K. Cryer</div>
+                      <div class="bg-orange">Senior Chef</div>
+                    </div>
+                  </div>
+                  <div class="col-10 col-sm mt-3  mb-md-5 position-relative container">
+                    <img class="img-fluid" src="https://demo.webtend.net/html/qichen/assets/images/team/chef-4.jpg" style="width: 100%; height: 100%;">
+                    <div class="overlay">
+                      <div class="bg-light text-dark">Jimmie K. Cryer</div>
+                      <div class="bg-orange">Senior Chef</div>
+                    </div>
+                  </div>
+                  <div class="col-10 col-sm mt-3  mb-md-5 position-relative container">
+                    <img class="img-fluid" src="https://demo.webtend.net/html/qichen/assets/images/team/chef-5.jpg" style="width: 100%; height: 100%;">
+                    <div class="overlay">
+                      <div class="bg-light text-dark">Jimmie K. Cryer</div>
+                      <div class="bg-orange">Senior Chef</div>
+                    </div>
+                  </div>
+                  <div class="col-10 col-sm mt-3 mb-md-5 position-relative container">
+                    <img class="img-fluid" src="https://media.gettyimages.com/id/140826569/photo/portrait-of-a-chef-juggling-with-tomatoes.jpg?s=612x612&w=gi&k=20&c=WcHZDyNb1B1OLl9D-qCKhoJjBDmCuK7A1_OwPZK9OAg=" style="width: 100%; height: 100%;">
+                    <div class="overlay">
+                      <div class="bg-light text-dark">Jimmie K. Cryer</div>
+                      <div class="bg-orange">Senior Chef</div>
+                    </div>
+                  </div>
+
+                </div>
+                
+
+              </div>
+
+            </div>
+             <!--WATCH VIDEOS-->
+             <div class="row justify-content-center row-cols-1 row-cols-md-2">
+              
+              <div id="vidoContainer" class="col  mt-5 mb-md-5">
+                <img class="img-fluid h-100" src="https://media-cdn.tripadvisor.com/media/photo-s/16/aa/0b/e3/come-in-please.jpg">
+                
+                <div id="videoPlayIcon"><i class="fas fa-play"></i></div>
+                
+             
+              </div>
+              <div class="col col-lg-4 mt-5 mb-5 ">
+                <p class="h4 orangeText subtitleBefore mt-3 mb-3">WATCH VIDEOS</p>
+                  <h2 class="fs-1 h1Style">How Can We Made Foods For Customers</h2>  
+                  <p class="text  fs-5 mt-3 text-secondary">Sit amet consectetur adipiscing elitsue risus mauris quam adipiscing phasellus aene ante orcirat scelerisque enim ut nulla</p>                 
+                <ul  class="List mt-5">
+                  <li class="d-block">
+                    <i class="fa-sharp fa-solid fa-circle-check fs-5 "></i>
+                    <p class="text  fs-5  text-dark d-inline">Best Way to Serve Our Foods</p>
+
+                  </li>
+                  <li>
+                    <i class="fa-sharp fa-solid fa-circle-check fs-5"></i>
+                    <p class="text  fs-5  text-dark d-inline">Low Cost & Onlie Orders</p>
+
+                  </li>
+                </ul>
+                
+
+                <div class="col mt-3 mb-lg-3">
+                  <a  class="Btn px-5 py-3" type="button" href="About-page/index.html">
+                    <span class="h6 ">Watch More</span>
+                    <i class="fas fa-long-arrow-right h6 "></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <!-- Working -->
+            <div  class="row row-cols-1 row-cols-md-2 " style="background-color: #fdf1ed;">
+                <div class="col mt-5 mb-5 text-center">
+                  <p class="h4 orangeText subtitleBefore mt-3 mb-3 ps-5">WORKING HOUR</p>
+                  <h2 class="fs-2 h1Style ps-5">Enjoy Our Foods From 6 Days In a Week</h2>
+                  <div class="row row-cols-1 justify-content-center align-items-center">
+                    <div class="col  mt-5 d-flex text-center justify-content-center align-items-center">
+                      <p class="WorkingHourDiv text  fs-5   text-light">Monday - Friday-------09am-6pm</p>
+  
+                    </div>    
+                    <div class="col mt-3 d-flex flex-row justify-content-center align-items-center">
+                    
+                      <p class="WorkingHourDiv text  fs-5 text-light">Saturday----------------08am-7pm</p>
+  
+                    </div>  
+                    <div class="col   mt-3 d-flex flex-row text-center justify-content-center align-items-center">
+                    
+                      <p class="WorkingHourDiv  fs-5  text-light">Sunday-----------------------Closed</p>
+  
+                    </div>  
+
+                  </div>                            
+                  
+                </div>
+                 <div class="col d-none d-md-block">
+                  <img class="img-fluid" src="https://demo.webtend.net/html/qichen/assets/images/bg/hours-bg-1.jpg" style="height: 100%;">
+                                  
+                </div>
+
+               
+               
+              </div>
+              
+              <!-- BOOKING TABLE -->
+              <div  class="row  row-cols-1 row-cols-md-2 mt-5  justify-content-center align-items-center mb-5 position-relative">
+                <span class="lineShapeStyle d-none d-lg-block" style="top: 8%; left: 50%; z-index: -1;"  >
+                  <img src="https://demo.webtend.net/html/qichen/assets/images/shape/line-1.png" class="img-fluid"  alt="" >
+                </span>
+                <div class="col col-md-5 text-center mt-5 mb-5">
+                    <img  class="img-fluid" src="	https://demo.webtend.net/html/qichen/assets/images/menu/menu-single-1.jpg" style="z-index: 5; height: 540px;;">
+                </div>
+                <div class="col col-md-6  mt-5  mb-5 ">  
+                    <p class="h4 orangeText subtitleBefore mt-3 mb-3" style="z-index: 0;">BOOKING TABLE</p>
+                    <h2 class="fs-1 h1Style" style="z-index: 0; background-color: white;">Make A Reservations</h2>                   
+                    <p class="text  fs-5 text-secondary" style="z-index: 0; background-color: white;">Sit amet consectetur adipiscing elitsue risus mauris adipiscing phasellus aene ante orcirat</p>
+                    <div class="input-group input-group-lg mb-3">
+                      <input type="text" class="form-control inputStyle" placeholder="Person" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <i class="input-group-text  far fa-user iStyle  d-flex align-items-center"></i>
+                    </div>
+                    <div class="input-group input-group-lg mb-3">
+                      <input type="date" class="form-control inputStyle"  placeholder="Reversed Date" aria-label="Reversed Date" aria-describedby="basic-addon2" style="border: 1px solid #e1dfdc;">
+                    </div>
+                    <div class="input-group input-group-lg mb-3">
+                      <input type="time" class="form-control inputStyle" y="basic-addon2" style="border: 1px solid #e1dfdc;">
+                    </div>
+                  
+                    <div class="col mt-3 mb-lg-3">
+                      <button  class="Btn px-5 py-3" type="button">
+                        <span class="h6 ">Book a Table</span>
+                        <i class="fas fa-long-arrow-right h6 "></i>
+                      </button>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- review-->
+              <div  class="row row-cols-1 mb-5 bg-dark ">
+                <div class="col-12 mt-5 text-center ">
+                  <p class="h5 text-light subtitle1Before subtitle1After mb-3">FOODS REVIEWS</p>
+                    <h2 class="fs-1 text-light h1Style">Global Customer Feedback</h2>                   
+                
+                </div>
+                <div class="row justify-content-center ">
+                  <div class="d-none d-lg-block col-5 mb-5 mt-3 position-relative">
+                    <img class="position-absolute bg-dark rounded-circle" src="https://demo.webtend.net/html/qichen/assets/images/testimonial/thumb-1.jpg" style="left: 50%; top: 0%; width:25% ;height: 25%; ">
+                    <img class="position-absolute bg-dark rounded-circle" src="https://demo.webtend.net/html/qichen/assets/images/testimonial/thumb-3.jpg" style="left: 5%; top: 50%; width:25% ;height: 25%">
+
+                    <span class=" col-6 ">
+                      <img src="https://demo.webtend.net/html/qichen/assets/images/shape/line-1.png" class="img-fluid"  alt="">
+                    </span>
+
+                  </div>
+                  <div class="col-10 col-lg-5 mb-5 mt-3 bg-dark border-orange rounded d-flex flex-column justify-content-center align-items-center " style="z-index: 2;">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner ">
+                        <div class="carousel-item active ">
+                          <p class="fs-4 text-light  mb-3">Sit amet consectetur adipiscing elit A sapien pellentesque nisl dignissim ultrices enim amet elementum. Eu ut velit elit posuere fusce ullamcorper maecenas fermentum nam elit 
+                            dolor ornare nec sociis aliquet facilisis.</p>
+                          <div class="d-flex justfy-content-between align-items-center">
+                            <ul class="List d-flex justfy-content-between align-items-center">
+                              <li class="d-inline me-1">
+                                <img class="rounded-circle img-fluid" src="https://demo.webtend.net/html/qichen/assets/images/testimonial/author-thumb-1.jpg" alt="">
+                              </li>
+                              <li class="text-light me-3">
+                                  <p class="fs-5 ">Brain A.Baranes</p>
+                                  <p class="fs-6">Ceo & Founder</p>
+                              </li>
+                              <li class="me-3">
+                                <i class="fa-solid fa-location-pin fs-4"></i>
+                              </li>
+                            </ul>
+                            
+                              
+                          </div>
+                         
+                        </div>
+                        <div class="carousel-item">
+                          <p class="fs-4 text-light  mb-3">Sit amet consectetur adipiscing elit A sapien pellentesque nisl dignissim ultrices enim amet elementum. Eu ut velit elit posuere fusce ullamcorper maecenas fermentum nam elit 
+                            dolor ornare nec sociis aliquet facilisis.</p>
+                          <div class="d-flex justfy-content-between align-items-center">
+                            <ul class="List d-flex justfy-content-between align-items-center">
+                              <li class="d-inline me-1">
+                                <img class="rounded-circle img-fluid" src="https://demo.webtend.net/html/qichen/assets/images/testimonial/author-thumb-3.jpg" alt="">
+                              </li>
+                              <li class="text-light me-3">
+                                  <p class="fs-5 ">Brain A.Baranes</p>
+                                  <p class="fs-6">Ceo & Founder</p>
+                              </li>
+                              <li class="me-3">
+                                <i class="fa-solid fa-location-pin fs-4"></i>
+                              </li>
+                            </ul>
+                            
+                              
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <p class="fs-4 text-light  mb-3">Sit amet consectetur adipiscing elit A sapien pellentesque nisl dignissim ultrices enim amet elementum. Eu ut velit elit posuere fusce ullamcorper maecenas fermentum nam elit 
+                            dolor ornare nec sociis aliquet facilisis.</p>
+                          <div class="d-flex justfy-content-between align-items-center">
+                            <ul class="List d-flex justfy-content-between align-items-center">
+                              <li class="d-inline me-1">
+                                <img class="rounded-circle img-fluid" src="https://demo.webtend.net/html/qichen/assets/images/testimonial/author-thumb-2.jpg" alt="">
+                              </li>
+                              <li class="text-light me-3">
+                                  <p class="fs-5 ">Brain A.Baranes</p>
+                                  <p class="fs-6">Ceo & Founder</p>
+                              </li>
+                              <li class="me-3">
+                                <i class="fa-solid fa-location-pin fs-4"></i>
+                              </li>
+                            </ul>
+                            
+                              
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                 
+  
+
+                </div>
+              </div>
+
+              <!--Gallary-->
+              <div class="row  row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6  justify-content-center">
+                <div class="mt-3 col  position-relative container">
+                  <img class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/instagram/insta-1.jpg" >
+                  <div class="overlayIcon">
+                    <a href="#"  class="icon" title="instagram">
+                      <i class="fab fa-instagram fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-3 col  position-relative container">
+                  <img class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/instagram/insta-2.jpg" >
+                  <div class="overlayIcon">
+                    <a href="#"  class="icon" title="instagram">
+                      <i class="fab fa-instagram fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-3 col  position-relative container">
+                  <img class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/instagram/insta-3.jpg" >
+                  <div class="overlayIcon">
+                    <a href="#"  class="icon" title="instagram">
+                      <i class="fab fa-instagram fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-3 col  position-relative container">
+                  <img class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/instagram/insta-8.jpg" >
+                  <div class="overlayIcon">
+                    <a href="#"  class="icon" title="instagram">
+                      <i class="fab fa-instagram fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-3 col  position-relative container">
+                  <img class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/instagram/insta-5.jpg" >
+                  <div class="overlayIcon">
+                    <a href="#"  class="icon" title="instagram">
+                      <i class="fab fa-instagram fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-3 col  position-relative container">
+                  <img class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/instagram/insta-6.jpg" >
+                  <div class="overlayIcon">
+                    <a href="#"  class="icon" title="instagram">
+                      <i class="fab fa-instagram fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-3 col  position-relative container">
+                  <img class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/instagram/insta-7.jpg" >
+                  <div class="overlayIcon">
+                    <a href="#"  class="icon" title="instagram">
+                      <i class="fab fa-instagram fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-3 col  position-relative container">
+                  <img class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/instagram/insta-8.jpg" >
+                  <div class="overlayIcon">
+                    <a href="#"  class="icon" title="instagram">
+                      <i class="fab fa-instagram fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-3 col  position-relative container">
+                  <img class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/instagram/insta-9.jpg" >
+                  <div class="overlayIcon">
+                    <a href="#"  class="icon" title="instagram">
+                      <i class="fab fa-instagram fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-3 col  position-relative container">
+                  <img class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/instagram/insta-10.jpg" >
+                  <div class="overlayIcon">
+                    <a href="#"  class="icon" title="instagram">
+                      <i class="fab fa-instagram fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-3 col  position-relative container">
+                  <img class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/instagram/insta-11.jpg" >
+                  <div class="overlayIcon">
+                    <a href="#"  class="icon" title="instagram">
+                      <i class="fab fa-instagram fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-3 col  position-relative container">
+                  <img class="img-fluid " src="https://demo.webtend.net/html/qichen/assets/images/instagram/insta-12.jpg" >
+                  <div class="overlayIcon">
+                    <a href="#"  class="icon" title="instagram">
+                      <i class="fab fa-instagram fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+                
+                
+
+              </div>
+              <!--start footer-->
+            <div id="footer" class="row mt-5">
+              <div class="row" style="margin: 0px;">
+                <div class="col-lg-3 col-md-6">
+                    <img src="https://demo.webtend.net/html/qichen/assets/images/logo/logo-white.png" alt="">
+                    <p class="fs-5 mt-3">Sit amet consectetur adipiscing elitsue risus mauris adipis</p>
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex flex-column">
+                  <p>Quik Links</p>
+                  <a href="#">About Company</a>
+                  <a href="#">Home Shop</a>
+                  <a href="#">Our Menu (CMS)</a>
+                  <a href="#">Shop (Ecom)</a>
+                  <a href="#">Recipes</a>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex flex-column">
+                    <p>Quik Links</p>
+                    <a href="#">About Company</a>
+                    <a href="#">Home Shop</a>
+                    <a href="#">Our Menu (CMS)</a>
+                    <a href="#">Shop (Ecom)</a>
+                    <a href="#">Recipes</a>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex flex-column">
+                    <p>Call for order:</p>
+                    <a href="#">+1 2586 5892</a>
+                    <a href="#">hello@example.com</a>
+                    <p style="font-size: 120%;">Location :
+                        119 Tanglewood Lane Gulfport, MS 39503</p>
+                </div> 
+
+              </div>
+              <hr>
+
+              <div class="row">
+                <div class="col-lg-7 col-md-6">
+                    <p style=" font-size: 120%;">© 2022 Qichen, All Rights Reserved</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <a href="#">Setting & Privacy </a>
+                </div>
+                <div class="col-lg-1 col-md-6">
+                    <a href="#">Faqs</a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <a href="#">Food Menu</a>
+                </div>
+
+              </div>
+
+            </div>
+            <!--end footer-->
+            
+              
+          
+    </div>
+
+  </body>
+</html>

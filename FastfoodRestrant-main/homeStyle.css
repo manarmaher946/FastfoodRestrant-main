@@ -1,0 +1,327 @@
+/*navbar*/ 
+.navbar{background-color: white; color: #000000;}
+
+.navbar li
+{
+    color: #000000;
+    margin: 0.5rem;
+}
+#NavLink{
+    color: black;
+}
+a.nav-link:not(#NavLink):hover{
+ color: #DF3F00;
+}
+#NavLink:hover{
+    color: black;
+}
+#NavLogo{
+    background-color: #df3f00;
+
+
+
+}
+
+.itemHover:hover{
+   cursor:default;
+}
+.itemHover:hover span{
+    color: #df3f00;
+}
+.itemHover:hover a{
+    color: white;
+    background-color: #000000;
+}
+#NavLinkBtn {background-color: #DF3F00;color: white;}
+#NavLinkBtn:hover{background-color: white; color: #DF3F00;}
+
+#mainStyle{
+    background-color: #fdf1ed;
+    margin-top: 80px;
+    position: relative;
+  
+}
+
+.BurgerShapeStyle{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    opacity: 0.1;
+    
+
+}
+.lineShapeStyle{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    z-index: 0;
+}
+
+.aStyle{
+    color: #000000;
+}
+ 
+.aHover:hover{
+    color: #df3f00;
+}
+.Btn{
+    background-color: #df3f00;
+    color: white;
+    border: none;
+    border-radius:10px ;
+    text-decoration: none;
+    
+
+}
+.Btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.h1Style{
+    font-weight: 500;
+    font-family: 'Forum';
+}
+#menuDivOuter{
+   
+    background-image: url("https://demo.webtend.net/html/qichen/assets/images/bg/category-bg-1.jpg");
+    color: white;
+    background-size: cover;
+}
+#menuDivInner{
+    background-color: #df3f00;
+    opacity: 0.9;
+    color: white;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    z-index: 0;
+
+}
+.border-orange{
+    border: 1px solid  #df3f00 ;
+}
+.orangeText{
+    color: #df3f00;
+
+
+}
+
+.subtitleBefore::before{
+    content: url("https://demo.webtend.net/html/qichen/assets/images/prev-arrow.png ");
+    background-size: cover;
+    margin-right: 2%;
+    
+    
+}
+.subtitle1Before::before{
+    content: url("https://demo.webtend.net/html/qichen/assets/images/white-prev-arrow.png");
+    background-size: cover;
+    margin-right: 2%;
+    
+    
+}
+.subtitle1After::after{
+    content: url("https://demo.webtend.net/html/qichen/assets/images/white-next-arrow.png");
+    background-size: cover;
+    margin-left: 2%;
+}
+
+.subtitleAfter::after{
+    content: url("https://demo.webtend.net/html/qichen/assets/images/next-arrow.png");
+    background-size: cover;
+    margin-left: 2%;
+    
+    
+}
+.menuItem{
+    background-color: rgba(255, 255, 255, 1);;
+    border-radius: 25px ;
+    color: #000000;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    padding: 30px;
+    z-index: 1;
+}
+.Astyle{
+  background-color: white;
+  color: black;
+  border: 2px solid gainsboro;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center; 
+
+}
+.menuLink{
+    text-decoration: none;
+    color: #000000;
+}
+.menuLink:hover{
+    color:#df3f00;
+    cursor: pointer;
+}
+.List{
+    display: inline;
+    list-style-type: none;
+    padding: 0px;
+    color: #df3f00;
+}
+.List li{
+    display: inline;
+}
+#MenuItems{
+    background: linear-gradient(to right,#faeae3 5%,rgba(255,255,255,0) 95%);
+}
+#vidoContainer{
+    position: relative;
+   
+}
+
+.aHover:hover{
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+
+}
+.WorkingHourDiv{
+    background-image: url("https://demo.webtend.net/html/qichen/assets/images/shape/hour-bg-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+
+}
+.inputStyle{
+    background-color: #fbf8f5;
+    color: #000000;
+    border-right: none;
+    height: 70px;
+}
+.inputStyle:focus{
+    border: 1px solid #e1dfdc;
+    border-right:none ;
+    box-shadow: none;
+    background-color: #fbf8f5 ;
+    
+}
+.iStyle{
+    background-color: #fbf8f5;
+    color: #000000;
+
+}
+/* image overlay*/
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    transition: .5s ease;
+    width: 85%;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+  
+.container:hover .overlay {
+    opacity: 1;
+}
+.bg-orange{
+    background-color: #df3f00;
+}
+
+
+.overlayIcon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    right: 0;
+    height: 100%;
+    width: 90%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .container:hover .overlayIcon {
+    opacity: 1;
+  }
+  
+  .icon {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .icon:hover {
+    color:#df3f00;
+  }
+
+
+#videoPlayIcon{
+ position: absolute;
+ width: 15%;
+ height: 15%;
+ top: 40%;
+ left: 40%;
+ background-color: white;
+ text-align: center;
+ border-radius: 50%;
+ font-size:x-large;
+ color: #df3f00;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ cursor: pointer;
+ 
+
+}
+#videoPlayIcon:hover{
+    background-color:#df3f00;
+    color:white;
+
+
+}
+/* start footer */
+#footer{
+    background-color:#fdf1ed ;
+    color: black;
+    padding: 4% ;
+}
+#footer img{
+  background-color: #DF3F00;
+  padding: 2%;
+}
+#footer input{
+    border: none;
+    padding: 4%;
+    border-radius: 10px;
+    width: 80%;
+}
+#footer p{
+    color: black;
+    font-size: 160%;
+}
+#footer a{
+    text-decoration: none;
+    color: gray;
+    padding: 2%;
+    font-size: 130%;
+    transition: 0.6s;
+}
+#footer a:hover{
+     color: #DF3F00;
+}
+/* end footer */
+
+

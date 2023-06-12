@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+    #BookTableBtn {
+      background-color: #df3f00;
+      color: white;
+
+      margin-left: 30%;
+      position: static;
+      width: 40%;
+      margin-bottom: 30%;
+      height: 4rem;
+      font-family: cursive;
+    }
+
+    #BookTableBtn:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .form-control {
+      background-color: antiquewhite;
+    }
+
+    h5 {
+      font-family: sans-serif;
+    }
+
+    p {
+      font-family: cursive;
+      color: #df3f00;
+    }
+
+    .map {
+      margin: auto;
+      width: 50%;
+      padding: 10%;
+    }
+
+    #footer {
+      background-color: #171c20;
+      color: white;
+      padding: 4%;
+    }
+
+    #footer img {
+      background-color: #df3f00;
+      padding: 2%;
+    }
+
+    #footer input {
+      border: none;
+      padding: 4%;
+      border-radius: 10px;
+      width: 80%;
+    }
+
+    #footer p {
+      color: rgb(142, 142, 142);
+      font-size: 160%;
+    }
+
+    #footer a {
+      text-decoration: none;
+      color: white;
+      padding: 2%;
+      font-size: 130%;
+      transition: 0.6s;
+    }
+
+    #footer a:hover {
+      color: #df3f00;
+    }
+
+    #images {
+      background-color: rgba(223, 63, 0, 0.07);
+      padding: 5%;
+      padding-left: 8%;
+    }
+
+    #images .image-food {
+      opacity: 0.6;
+      transition: 0.6s;
+    }
+
+    #images .image-food:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #images .no-img {
+        display: none;
+      }
+
+      #images .image-food {
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 990px) {
+      #images .image-food {
+        text-align: center;
+        margin-top: 5%;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      background-color: #0E1317;
+    }
+
+    .navbar li {
+      margin: 10px;
+    }
+
+    #NavLink {
+      color: white;
+    }
+
+    a.nav-link:not(#NavLink):hover {
+      color: #DF3F00;
+    }
+
+    #NavLink:hover {
+      color: #DF3F00;
+    }
+
+    #NavLinkBtn {
+      background-color: #DF3F00;
+      color: white;
+    }
+
+    #NavLinkBtn:hover {
+      background-color: white;
+      color: #DF3F00;
+    }
+
+    @media screen and (min-width: 990px) {
+
+      #finalItem,
+      #NavLinkBtn {
+        font-size: 7px;
+      }
+    }
+
+
+    @media screen and (min-width: 1150px) {
+
+      #finalItem,
+      #NavLinkBtn {
+        font-size: 16px;
+      }
+    }
+
+    #larg-img {
+      position: relative;
+      background-color: #000;
+      height: 600px;
+    }
+
+    #larg-img::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding-bottom: 100px;
+      z-index: 0;
+      opacity: 0.5;
+      background: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center;
+      background-size: cover;
+    }
+
+    #content {
+      position: absolute;
+      z-index: 1;
+      color: white;
+      justify-content: center;
+      top: 40%;
+      left: 40%;
+    }
+
+    #content h2 {
+      font-size: 70px;
+    }
+
+    #content #btns {
+      background-color: #DF3F00;
+      text-align: center;
+      margin-top: 12%;
+      font-size: 20px;
+      border-radius: 20px;
+      padding: 10px 20px;
+    }
+
+    #content #btns a {
+      text-decoration: none;
+      color: white;
+      transition: 0.6s;
+      font-weight: bold;
+    }
+
+    #content #btns a:hover {
+      color: black;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #content {
+        left: 30%;
+        margin: 0px;
+      }
+
+      #content h2 {
+        font-size: 40px;
+      }
+
+      #content #btns {
+        position: absolute;
+        width: 100%;
+        left: 10%;
+        font-size: 100%;
+      }
+    }
+
+    /*  end large image */
+  </style>
+</head>
+
+<body>
+
+
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark fs-6 p-2 py-3">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#"><img src="logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active " href="../index.html" id="navbarDropdown"> Home</a>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active " href="../MenuPage/index.html">Menu</a>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="../About-page/index.html">About</a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active " href="../BlogDetailsPage/home.html" id="navbarDropdown"> Blog </a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active " href="index.html" id="navbarDropdown">Reservation</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active " href="../ChefsPage/index.html" id="navbarDropdown">Chefs</a>
+
+          </li>
+
+          <li class="nav-item text-white" style="margin-top:12px;">
+            <a class="nav-link " id="NavLink" aria-current="page" href="#"><i class="fas fa-search"></i></a>
+          </li>
+
+
+        </ul>
+
+        <div class="nav-item d-flex align-items-center" id="finalItem">
+
+          <div> <span id="NavLink" class="nav-link me-3" aria-current="page" style="cursor:pointer"><img src="call.png">
+              &nbsp; 000(123) 456 89</span>
+          </div>
+
+          <div>
+            <span><button id="NavLinkBtn" class="btn m-0">Book A Table
+                &nbsp;<i class="fas fa-long-arrow-right"></i></button></span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!--end navbar-->
+  <!--start large image-->
+  <div id="larg-img" style="font-family: 'Forum'">
+    <div id="content">
+      <h2>Reservation</h2>
+      <div class="row justify-content-center align-items-center" id="btns">
+        <a href="../index.html" class="col-sm-4 ">Home</a>
+        <i class="fa-sharp fa-solid fa-arrow-right col-sm-2 mt-1"></i>
+        <span class="col-sm-6">Reservation
+        </span>
+      </div>
+    </div>
+  </div>
+  <!--end large image-->
+
+
+  <div class="container" style="font-family: 'Forum'">
+    <div class="row row-cols-1 row-cols-md-2 mt-5 justify-content-center align-items-center mb-5 position-relative">
+      <div class="col">
+        <img src="contact-5.jpg" class="img-fluid" alt="" />
+      </div>
+
+      <div class="col col-md-6 mt-5 mb-5">
+        <p class="h5 orangeText subtitleBefore mt-5 mb-3" style="z-index: 0">
+          BOOKING TABLE
+        </p>
+        <h2 class="fs-1 h1Style" style="z-index: 0; background-color: white">
+          Make A Reservations
+        </h2>
+        <p class="text fs-5 text-secondary" style="z-index: 0; background-color: white">
+          Sit amet consectetur adipiscing elitsue risus mauris adipiscing
+          phasellus aene ante orcirat
+        </p>
+        <div class="input-group input-group-lg mb-3">
+          <input type="text" class="form-control inputStyle" placeholder="Person" aria-label="Recipient's username"
+            aria-describedby="basic-addon2" />
+          <i class="input-group-text far fa-user iStyle d-flex align-items-center"></i>
+        </div>
+        <div class="input-group input-group-lg mb-3">
+          <input type="date" class="form-control inputStyle" placeholder="Reversed Date" aria-label="Reversed Date"
+            aria-describedby="basic-addon2" style="border: 1px solid #e1dfdc" />
+        </div>
+        <div class="input-group input-group-lg mb-3">
+          <input type="time" class="form-control inputStyle" y="basic-addon2" style="border: 1px solid #e1dfdc" />
+        </div>
+
+
+        <div class="input-group input-group-lg mb-3">
+          <input type="text" placeholder="phone" class="form-control inputStyle" y="basic-addon2"
+            style="border: 1px solid #e1dfdc" />
+
+
+
+          <i class="input-group-text far fa-solid fa-phone iStyle d-flex align-items-center"></i>
+        </div>
+
+        <button id="BookTableBtn" class="btn" type="button">
+          <span class="h6">Book A Table</span>
+          <i class="fas fa-long-arrow-right h6"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mx-0 mb-5">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1343597.2149697507!2d2.350267!3d48.87321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5850641931fd296!2sRestaurant%20Eels!5e0!3m2!1sar!2seg!4v1673638488789!5m2!1sar!2seg"
+        width="300" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <div id="images">
+    <div class="row" style="margin: 0px">
+      <div class="col-lg-2 col-md-4 col-sm-4 image-food">
+        <img src="img1.png" alt="" />
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-4 image-food no-img">
+        <img src="img2.png" alt="" />
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-4 image-food no-img">
+        <img src="img3.png" alt="" />
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-4 image-food no-img">
+        <img src="img4.png" alt="" />
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-4 image-food no-img">
+        <img src="img5.png" alt="" />
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-4 image-food no-img">
+        <img src="img6.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!--end collection of images-->
+
+  <div id="footer"style="font-family: 'Forum'">
+    <div class="row" style="margin: 0px">
+      <div class="col-lg-3 col-md-6">
+        <div>
+          <img src="logo.png" alt="" />
+        </div>
+
+        <p class="fs-5 mt-3" style="color: white">
+          Sit amet consectetur adipiscing elitsue risus mauris adipis
+        </p>
+        <input type="email" placeholder="Email Address" />
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex flex-column">
+        <p>Quik Links</p>
+        <a href="../index.html">Home Shop</a>
+        <a href="../About-page/index.html">About Company</a>
+        <a href="../MenuPage/index.html">Our Menu (CMS)</a>
+        <a href="../BlogDetailsPage/home.html">Blog</a>
+        <a href="index.html">Reservation</a>
+        <a href="../ChefsPage/index.html">Chefs</a>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex flex-column">
+        <p>Quik Links</p>
+        <a href="../index.html">Home Shop</a>
+        <a href="../About-page/index.html">About Company</a>
+        <a href="../MenuPage/index.html">Our Menu (CMS)</a>
+        <a href="../BlogDetailsPage/home.html">Blog</a>
+        <a href="index.html">Reservation</a>
+        <a href="../ChefsPage/index.html">Chefs</a>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex flex-column">
+        <p>Call for order:</p>
+        <a href="#">+1 2586 5892</a>
+        <a href="#">hello@example.com</a>
+        <p style="color: white; font-size: 120%">
+          Location : 119 Tanglewood Lane Gulfport, MS 39503
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <div class="row">
+      <div class="col-lg-7 col-md-6">
+        <p style="color: white; font-size: 120%">
+          © 2022 Qichen, All Rights Reserved
+        </p>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <a href="#">Setting & Privacy </a>
+      </div>
+      <div class="col-lg-1 col-md-6">
+        <a href="#">Faqs</a>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <a href="#">Food Menu</a>
+      </div>
+    </div>
+  </div>
+  <!--end footer-->
+</body>
+
+</html>

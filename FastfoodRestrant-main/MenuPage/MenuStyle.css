@@ -1,0 +1,221 @@
+*{box-sizing: border-box;}
+
+/*navbar*/ 
+.navbar{background-color: #0E1317;}
+
+.navbar li
+{
+    margin: 0.5rem;
+}
+#NavLink{
+    color: white;
+}
+a.nav-link:not(#NavLink):hover{
+ color: #DF3F00;
+}
+#NavLink:hover{
+    color: #DF3F00;
+}
+
+#NavLinkBtn {background-color: #DF3F00;color: white;}
+#NavLinkBtn:hover{background-color: white; color: #DF3F00;}
+
+@media screen and (min-width: 990px) {
+    #finalItem, #NavLinkBtn{
+        font-size: 7px;
+    }
+}
+
+
+@media screen and (min-width: 1150px) {
+    #finalItem , #NavLinkBtn{
+        font-size:16px;
+    }
+}
+
+
+/* Menu Style */
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#larg-img{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    height: 600px;
+    position: relative;
+    background-image:url("https://demo.webtend.net/html/qichen/assets/images/bg/page-bg-1.jpg");
+    background-size: cover;
+    font-family: Forum;
+}
+#larg-img::before{
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    background: rgba(10,0,0,0.77);
+    color: white;
+    background-size: cover;
+}
+#btnlast {
+    background-color: #df3f00;
+    color: white;
+    width: 200px;
+}
+#content{
+    position: absolute;
+    color: white;
+    justify-content: center;
+    top: 40%;
+    left: 43%;
+    
+}
+#content h1{
+     font-size: 70px;
+}
+#content #center_div{
+    background-color: #DF3F00;
+    text-align: center;
+    margin-top: 12%;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+#content #center_div a{
+    text-decoration: none;
+    color: white;
+}
+#content #center_div a:hover{
+    color: black;
+}
+.spanWordOne
+{
+    font-size: 20px;
+    margin-right: 20px
+}
+.spanWordTwo
+{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.section-title .sub-title{
+    margin-bottom: 10px;
+}
+.subject
+{
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    color:#DF3F00
+}
+.subject:before
+{
+    background: url("https://demo.webtend.net/html/qichen/assets/images/prev-arrow.png");
+    margin-inline-end: 25px;
+}
+.subject:after
+{
+    background: url("https://demo.webtend.net/html/qichen/assets/images/next-arrow.png");
+    margin-inline-start: 25px;
+}
+.subject:before,.subject:after{
+    content: "";
+    width: 70px;
+    height: 18px;
+}
+ul{
+    display: inline;
+    list-style-type: none;
+    padding: 0px;
+    color: #df3f00;
+}
+#MenuItems
+{
+    background: linear-gradient(to right,#faeae3 5%,rgba(255,255,255,0) 95%);
+}
+#booking:before {
+    content: url("https://demo.webtend.net/html/qichen/assets/images/prev-arrow.png");
+    background-size: cover;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #content{
+       left: 23%;
+       margin: 0px;
+    }
+    #content h2{
+        font-size: 40px;
+    }
+    #content #btns{
+        position: absolute;
+        width: 100%;
+        left: 10%;
+        font-size: 100%;
+    }
+}
+
+/* start collection of images */
+#images{
+    background-color:rgba(223, 63, 0, 0.07) ;
+    padding: 5%;
+}
+#images .image-food{
+    opacity: 0.6;
+    transition: 0.6s;
+}
+#images .image-food:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+    #images .no-img{
+        display: none;
+    }
+    #images .image-food{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 990px){
+    #images .image-food{
+        text-align: center;
+        margin-top: 5%;
+    }
+}  
+/* end collection of images */
+
+
+/* start footer */
+#footer{
+    background-color: #171c20;
+    color: white;
+    padding: 4% ;
+}
+#footer img{
+  background-color: #DF3F00;
+  padding: 2%;
+}
+#footer input{
+    border: none;
+    padding: 4%;
+    border-radius: 10px;
+    width: 80%;
+}
+#footer p{
+    color: rgb(142, 142, 142);
+    font-size: 160%;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+    font-size: 130%;
+    transition: 0.6s;
+}
+#footer a:hover{
+     color: #DF3F00;
+}
+/* end footer */

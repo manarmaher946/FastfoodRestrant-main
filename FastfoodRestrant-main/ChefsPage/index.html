@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+  h3 {
+    color: #df3f00;
+    /* font-size: large; */
+    text-align: center;
+    overflow-y: hidden;
+  }
+
+  h2 {
+    text-align: center;
+    overflow-y: hidden;
+  }
+
+  img {
+    height: 70%;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding-bottom: 4%;
+  }
+
+  .card {
+    /* padding-left: 1%; */
+    margin-right: 4%;
+    border: none;
+  }
+
+  /* div {
+      border: 1px solid red;
+    } */
+
+  .hr1 {
+    border: 1px solid orangered;
+  }
+
+  .hr2 {
+    border: 2px solid orangered;
+  }
+
+  h5 {
+    overflow-y: hidden;
+  }
+
+  .Fastfoods {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    justify-content: space-between;
+  }
+
+  .Seafoods {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    justify-content: space-between;
+  }
+
+  .Drink {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    justify-content: space-between;
+  }
+
+
+  .animate {
+    position: relative;
+    animation: first 1s infinite;
+  }
+
+  @keyframes first {
+    from {
+      transform: translate(0px);
+    }
+
+    to {
+      transform: translate(20px);
+    }
+  }
+
+  .here {
+    position: relative;
+  }
+
+  .card-img-top {
+    opacity: 1;
+    height: auto;
+  }
+
+  .middle {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+    width: 90%;
+    height: 50%;
+    background-color: white;
+  }
+
+  .card:hover .card-img-top {
+    opacity: 0.3;
+  }
+
+  .card:hover .middle {
+    opacity: 1;
+  }
+
+  .div1 {
+    background-color: black;
+    color: white;
+    height: 30%;
+  }
+
+  .div2 {
+    background-color: #df3f00;
+    color: white;
+    width: 50%;
+  }
+
+
+  #footer {
+    background-color: #171c20;
+    color: white;
+    padding: 4%;
+  }
+
+  #footer img {
+    background-color: #df3f00;
+    padding: 2%;
+  }
+
+  #footer input {
+    border: none;
+    padding: 4%;
+    border-radius: 10px;
+    width: 80%;
+  }
+
+  #footer p {
+    color: rgb(142, 142, 142);
+    font-size: 160%;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+    font-size: 130%;
+    transition: 0.6s;
+  }
+
+  #footer a:hover {
+    color: #df3f00;
+  }
+
+  #images {
+    background-color: rgba(223, 63, 0, 0.07);
+    padding: 5%;
+    padding-left: 8%;
+  }
+
+  #images .image-food {
+    opacity: 0.6;
+    transition: 0.6s;
+  }
+
+  #images .image-food:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #images .no-img {
+      display: none;
+    }
+
+    #images .image-food {
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 990px) {
+    #images .image-food {
+      text-align: center;
+      margin-top: 5%;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+  #moveelement {
+    margin-top: 130px;
+  }
+
+  /*navbar*/
+  .navbar {
+    background-color: #0E1317;
+  }
+
+  .navbar li {
+    margin: 10px;
+  }
+
+  #NavLink {
+    color: white;
+  }
+
+  a.nav-link:not(#NavLink):hover {
+    color: #DF3F00;
+  }
+
+  #NavLink:hover {
+    color: #DF3F00;
+  }
+
+  #NavLinkBtn {
+    background-color: #DF3F00;
+    color: white;
+  }
+
+  #NavLinkBtn:hover {
+    background-color: white;
+    color: #DF3F00;
+  }
+
+  @media screen and (min-width: 990px) {
+
+    #finalItem,
+    #NavLinkBtn {
+      font-size: 7px;
+    }
+  }
+
+
+  @media screen and (min-width: 1150px) {
+
+    #finalItem,
+    #NavLinkBtn {
+      font-size: 16px;
+    }
+  }
+
+  /*  start large image */
+
+  #larg-img{
+    position: relative;
+    background-color: #000;
+    height: 600px;
+}
+#larg-img::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+    z-index: 0;
+    opacity: 0.5;
+    background: url("	https://demo.webtend.net/html/qichen/assets/images/bg/page-bg-1.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+  #content {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    justify-content: center;
+    top: 40%;
+    left: 40%;
+  }
+
+  #content h2 {
+    font-size: 70px;
+  }
+
+  #content #btns {
+    background-color: #DF3F00;
+    text-align: center;
+    margin-top: 12%;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+
+  #content #btns a {
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+    font-weight: bold;
+  }
+
+  #content #btns a:hover {
+    color: black;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #content {
+      left: 35%;
+      margin: 0px;
+    }
+
+    #content h2 {
+      font-size: 40px;
+    }
+
+    #content #btns {
+      position: absolute;
+      width: 100%;
+      left: 10%;
+      font-size: 100%;
+    }
+  }
+
+  /*  end large image */
+
+  #img-id {
+    overflow-x: hidden;
+  }
+</style>
+
+<body>
+
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark fs-6 p-2 py-3">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#"><img src="logo-white.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active " href="../index.html" id="navbarDropdown"> Home</a>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active " href="../MenuPage/index.html">Menu</a>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="../About-page/index.html">About</a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active " href="../BlogDetailsPage/home.html" id="navbarDropdown"> Blog </a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active " href="../ReservationPage/index.html" id="navbarDropdown">Reservation</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active " href="index.html" id="navbarDropdown">Chefs</a>
+
+          </li>
+
+          <li class="nav-item text-white " style="margin-top: 13px;">
+            <a class="nav-link " id="NavLink" aria-current="page" href="#"><i class="fas fa-search"></i></a>
+          </li>
+
+        </ul>
+
+        <div class="nav-item d-flex align-items-center" id="finalItem">
+
+          <div> <span id="NavLink" class="nav-link me-2" aria-current="page" style="cursor:pointer"><img src="call.png">
+              &nbsp; 000(123) 456 89</span>
+          </div>
+
+          <div>
+            <span><button id="NavLinkBtn" class="btn">Book A Table
+                &nbsp;<i class="fas fa-long-arrow-right"></i></button></span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <!--end navbar-->
+  <!--start large image-->
+  <div id="larg-img">
+    <div id="content">
+        <h2>Chefs</h2>
+        <div class="row justify-content-center align-items-center" id="btns">
+            <a href="../index.html" class="col-sm-4 ">Home</a>
+            <i class="fa-sharp fa-solid fa-arrow-right col-sm-2 mt-1"></i>
+            <span class="col-sm-6">Chefs</span>
+        </div>
+    </div>
+</div>
+<!--end large image-->
+
+
+  <div class="container-fluid" id="moveelement"style="font-family: 'Forum'">
+    <div class="row mx-0">
+      <div>
+        <h3>BEST FOOD MENU</h3>
+        <h2>Meet Our Experience & Master Chefs</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container here" style="font-family: 'Forum'">
+    <div class="card-group">
+      <div class="card">
+        <img class="card-img-top" src="chef-9.jpg" alt="Card image cap" />
+        <div class="middle">
+          <div class="div1">Jimmie K. Cryer</div>
+          <div class="div2">Senior Chef</div>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="chef-14.jpg" alt="Card image cap" />
+        <div class="middle">
+          <div class="div1">Jimmie K. Cryer</div>
+          <div class="div2">Senior Chef</div>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="chef-10.jpg" alt="Card image cap" />
+        <div class="middle">
+          <div class="div1">Jimmie K. Cryer</div>
+          <div class="div2">Senior Chef</div>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="chef-8.jpg" alt="Card image cap" />
+        <div class="middle">
+          <div class="div1">Jimmie K. Cryer</div>
+          <div class="div2">Senior Chef</div>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <img class="card-img-top" src="chef-7.jpg" alt="Card image cap" />
+        <div class="middle">
+          <div class="div1">Jimmie K. Cryer</div>
+          <div class="div2">Senior Chef</div>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="chef-12.jpg" alt="Card image cap" />
+        <div class="middle">
+          <div class="div1">Jimmie K. Cryer</div>
+          <div class="div2">Senior Chef</div>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="chef-9.jpg" alt="Card image cap" />
+        <div class="middle">
+          <div class="div1">Jimmie K. Cryer</div>
+          <div class="div2">Senior Chef</div>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="chef-14.jpg" alt="Card image cap" />
+        <div class="middle">
+          <div class="div1">Jimmie K. Cryer</div>
+          <div class="div2">Senior Chef</div>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="img-id" style="font-family: 'Forum'">
+    <div class="row mx-0">
+      <div class="col-12 col-md-6">
+        <img src="skill-1.jpg" class="img-fluid" alt="" />
+      </div>
+      <div class="col-12 col-md-6 pt-md-5">
+        <div class="animate">
+          <h3>SKILLS & EXPERIENCE</h3>
+          <h2>We’re Very Experience and Professionals</h2>
+        </div>
+        <p>
+          Sed ut perspiciatis unde natus voluptatem accusantium doloremque
+          laudantium totam aperiam queab inventore veritatis et quasi
+          architecto beatae vitae sunt
+        </p>
+        <div class="Fastfoods">
+          <h5>Fastfoods</h5>
+          <span>93%</span>
+        </div>
+        <hr class="hr1" />
+        <hr class="hr2" />
+        <div class="Seafoods">
+          <h5>Seafoods</h5>
+          <span>82%</span>
+        </div>
+        <hr class="hr1" />
+        <hr class="hr2" />
+
+        <div class="Drink">
+          <h5>Drink & Juice</h5>
+          <span>82%</span>
+        </div>
+
+        <hr class="hr1" />
+        <hr class="hr2" />
+      </div>
+    </div>
+  </div>
+
+  <!--start collection of images-->
+
+  <div id="images">
+    <div class="row" style="margin: 0px">
+      <div class="col-lg-2 col-md-4 col-sm-4 image-food">
+        <img src="img1.png" alt="" />
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-4 image-food no-img">
+        <img src="img2.png" alt="" />
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-4 image-food no-img">
+        <img src="img3.png" alt="" />
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-4 image-food no-img">
+        <img src="img4.png" alt="" />
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-4 image-food no-img">
+        <img src="img5.png" alt="" />
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-4 image-food no-img">
+        <img src="img6.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!--end collection of images-->
+
+  <div id="footer" style="font-family: 'Forum'">
+    <div class="row" style="margin: 0px">
+      <div class="col-lg-3 col-md-6">
+
+        <div>
+          <img src="logo.png" alt="" />
+        </div>
+        <p class="fs-5 mt-3" style="color: white">
+          Sit amet consectetur adipiscing elitsue risus mauris adipis
+        </p>
+        <input type="email" placeholder="Email Address" />
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex flex-column">
+        <p>Quik Links</p>
+        <a href="../index.html">Home Shop</a>
+        <a href="../About-page/index.html">About Company</a>
+        <a href="../MenuPage/index.html">Our Menu (CMS)</a>
+        <a href="../BlogDetailsPage/home.html">Blog</a>
+        <a href="../ReservationPage/index.html">Reservation</a>
+        <a href="index.html">Chefs</a>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex flex-column">
+        <p>Quik Links</p>
+        <a href="../index.html">Home Shop</a>
+        <a href="../About-page/index.html">About Company</a>
+        <a href="../MenuPage/index.html">Our Menu (CMS)</a>
+        <a href="../BlogDetailsPage/home.html">Blog</a>
+        <a href="../ReservationPage/index.html">Reservation</a>
+        <a href="index.html">Chefs</a>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex flex-column">
+        <p>Call for order:</p>
+        <a href="#">+1 2586 5892</a>
+        <a href="#">hello@example.com</a>
+        <p style="color: white; font-size: 120%">
+          Location : 119 Tanglewood Lane Gulfport, MS 39503
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <div class="row">
+      <div class="col-lg-7 col-md-6">
+        <p style="color: white; font-size: 120%">
+          © 2022 Qichen, All Rights Reserved
+        </p>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <a href="#">Setting & Privacy </a>
+      </div>
+      <div class="col-lg-1 col-md-6">
+        <a href="#">Faqs</a>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <a href="#">Food Menu</a>
+      </div>
+    </div>
+  </div>
+  <!--end footer-->
+</body>
+
+</html>

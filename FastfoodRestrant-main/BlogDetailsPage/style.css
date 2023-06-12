@@ -1,0 +1,393 @@
+*{box-sizing: border-box;}
+
+/*navbar*/ 
+.navbar{background-color: #0E1317;}
+
+.navbar li
+{
+    margin: 10px;
+}
+#NavLink{
+    color: white;
+}
+a.nav-link:not(#NavLink):hover{
+ color: #DF3F00;
+}
+#NavLink:hover{
+    color: #DF3F00;
+}
+
+#NavLinkBtn {background-color: #DF3F00;color: white;}
+#NavLinkBtn:hover{background-color: white; color: #DF3F00;}
+
+@media screen and (min-width: 990px) {
+    #finalItem, #NavLinkBtn{
+        font-size: 7px;
+    }
+}
+
+
+@media screen and (min-width: 1150px) {
+    #finalItem , #NavLinkBtn{
+        font-size: 16px;
+    }
+}
+
+
+/*slider*/ 
+
+#slider
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) ,url("images/slide.png");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+/*Left Content*/ 
+
+#imageDiv
+{
+    background-image: url("images/single-blog-1.jpg");
+    width: 90%;
+    height:400px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#imageDiv div{
+    text-align: center;
+    width:10%;
+    height:15%;
+    background-color: #DF3F00;
+    border: none;
+    border-radius: 10%;
+    color: white;
+    position: absolute;
+    left: 95%;
+    top:95%;
+}
+
+
+
+
+#imageDetails button
+{
+background-color: #DF3F00;
+color: white;
+}
+#imageDetails a
+{
+    text-decoration: none;
+    color: black;
+}
+#imageDetails a:hover
+{
+    color: #DF3F00;
+}
+
+@media screen and (max-width: 500px) {
+    #imageDetails div{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    #imageDetails div{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+#qoute{
+    border-left:2px solid #DF3F00;
+    background-color: white;
+}
+#qoute p{ 
+    font-weight: bold;
+}
+#qoute p::before
+{
+    display: inline-block;
+    content: "";
+    width: 50px;
+    height: 2px;
+    margin-right: 10px;
+    background-color: #DF3F00;
+}
+
+
+
+
+.tags{
+    text-decoration: none;
+    color: black;
+}
+.tags:hover{
+    color: #DF3F00;
+}
+
+.news{
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#FDF5F2;
+    text-align: center;
+    padding-top: 1%;
+}
+.news:hover{
+    color: white;
+    background-color: #DF3F00;
+    cursor: pointer;
+}
+
+
+#authorDiv{
+    background-color: #FDF5F2;
+    border: 1px solid #f4d7cc;
+}
+#authorImg{
+    width:130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+
+
+#afterAuthorDiv img:hover{
+    filter: brightness(70%);
+}
+#afterAuthorDiv a{
+    text-decoration: none;
+    color: black;
+}
+#afterAuthorDiv a:hover{
+    color: #DF3F00;
+}
+#afterAuthorDiv a.d-block,#afterAuthorDiv a.d-block:hover{
+    color: #DF3F00;
+}
+
+
+#commentsDiv{background-color: #FDF5F2;border: 1px solid #f4d7cc;}
+#commentsDiv div.card{
+border-radius: 25px;
+}
+#commentsDiv img{
+    width: 70px;
+    height: 80px;
+}
+
+
+
+#replyDiv
+{
+    background-color: white;
+}
+
+#replyDiv form input ,#replyDiv form textarea{
+    background-color: #FDF5F2;
+    font-size: 20px;
+    text-indent: 20px;
+}
+#replyDiv form input{height: 60px;}
+#replyDiv form textarea{height: 120px;}
+#replyDiv form button{
+    background-color: #DF3F00; color: white;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+#replyDiv form button:hover{
+    background-color: black;
+}
+
+
+
+
+
+/*Right Content*/ 
+
+#serachInput{
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    color: black;
+    text-indent: 10px;
+    background-color: #FDF1ED;
+    border: 1px solid #f4d7cc;
+    background-image: url("images/search.png");
+    background-size: 25px 25px;
+    background-position:90% 50%;
+    background-repeat: no-repeat;
+}
+
+
+#categoryDiv
+{
+    background-color: #FDF1ED;
+    border: 1px solid #f4d7cc; 
+}
+#categoryDiv li{
+    height: 50px;
+    background-color: #FDF1ED;
+    border: none;
+    border-bottom:thin solid rgb(145, 145, 145);
+
+   
+}
+#categoryDiv li:last-child{
+    border: none;
+}
+#categoryDiv li a{
+    text-decoration: none;
+    color: black;
+}
+
+#categoryDiv li:hover a{
+    color: #DF3F00;
+}
+#categoryDiv li:hover:not(li:last-child){
+    border-bottom:thin solid #DF3F00;
+    cursor: pointer;
+}
+#categoryDiv li:last-child:hover{
+    cursor: pointer;
+}
+
+
+
+#recentNewsDiv{
+    background-color: #FDF1ED;
+    border: 1px solid #f4d7cc; 
+}
+#recentNewsDiv .card{
+    border: none;
+    background-color: #FDF1ED;
+}
+small:hover {
+    cursor: pointer;
+}
+#recentNewsDiv span:hover{
+    color: #DF3F00;
+}
+
+
+#qualityDiv{
+    width: 100%;
+    height: 360px;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) ,url("images/contact-info-bg.jpg");
+}
+#qualityDiv button{
+    background-color: white;
+    color: black;
+    width: 50%;
+}
+#qualityDiv button:hover{
+    color: white;
+    background-color: #DF3F00;
+}
+
+#productsTagsDiv{
+    background-color:#FDF1ED;
+    border: 1px solid #f4d7cc; 
+    width: 100%;
+    height: 250px;
+}
+
+#productsTagsDiv button{
+    border-color: #FDF1ED;
+}
+#productsTagsDiv button:hover{
+    color: white;
+    background-color: #DF3F00;
+}
+
+
+
+
+
+
+
+/* start collection of images */
+#images{
+    background-color:rgba(223, 63, 0, 0.07) ;
+    padding: 5%;
+}
+#images .image-food{
+    opacity: 0.6;
+    transition: 0.6s;
+}
+#images .image-food:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+    #images .no-img{
+        display: none;
+    }
+    #images .image-food{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 990px){
+    #images .image-food{
+        text-align: center;
+        margin-top: 5%;
+    }
+}  
+/* end collection of images */
+
+
+
+
+
+
+
+/* start footer */
+#footer{
+    background-color: #171c20;
+    color: white;
+    padding: 4% ;
+}
+#footer img{
+  background-color: #DF3F00;
+  padding: 2%;
+}
+#footer input{
+    border: none;
+    padding: 4%;
+    border-radius: 10px;
+    width: 80%;
+}
+#footer p{
+    color: rgb(142, 142, 142);
+    font-size: 160%;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+    font-size: 130%;
+    transition: 0.6s;
+}
+#footer a:hover{
+     color: #DF3F00;
+}
+/* end footer */
+
+
+
+
+
+
+

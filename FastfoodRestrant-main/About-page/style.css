@@ -1,0 +1,684 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+/* start navbar */
+.navbar{background-color: #0E1317;}
+
+.navbar li
+{
+    margin: 10px;
+}
+#NavLink{
+    color: white;
+}
+a.nav-link:not(#NavLink):hover{
+ color: #DF3F00;
+}
+#NavLink:hover{
+    color: #DF3F00;
+}
+
+#NavLinkBtn {background-color: #DF3F00;color: white;}
+#NavLinkBtn:hover{background-color: white; color: #DF3F00;}
+
+@media screen and (min-width: 990px) {
+    #finalItem, #NavLinkBtn{
+        font-size: 7px;
+    }
+}
+
+
+@media screen and (min-width: 1150px) {
+    #finalItem , #NavLinkBtn{
+        font-size: 16px;
+    }
+}
+/*end navbar */
+
+/*  start large image */
+#larg-img{
+    position: relative;
+    background-color: #000;
+    height: 600px;
+}
+#larg-img::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+    z-index: 0;
+    opacity: 0.5;
+    background: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center;
+    background-size: cover;
+}
+#content{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    justify-content: center;
+    top: 40%;
+    left: 40%;
+    font-family:'Forum';
+}
+#content h2{
+     font-size: 70px;
+     font-weight: bold;
+}
+#content #btns{
+    background-color: #DF3F00;
+    text-align: center;
+    margin-top: 12%;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+#content #btns a{
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+    font-weight: bold;
+}
+#content #btns a:hover{
+    color: black;
+}
+@media only screen and (max-width: 600px) {
+    #content{
+       left: 30%;
+       margin: 0px;
+    }
+    #content h2{
+        font-size: 40px;
+    }
+    #content #btns{
+        position: absolute;
+        width: 100%;
+        left: 10%;
+        font-size: 100%;
+    }
+}
+/*  end large image */
+
+
+/* start part about quchen */
+#about-quchen{
+    margin-right:5%;
+    padding: 2%;
+    font-family:'Forum';
+}
+.head-four::before{
+     content: url('https://demo.webtend.net/html/qichen/assets/images/prev-arrow.png');
+}
+ #txt h2 ,.txt-left .head-four{
+    color: #DF3F00;
+    font-size: 180%;
+    font-weight: bold;
+}
+.txt-left .p1-choose, #txt .p1-quchen{
+    font-size: 220%;
+    color: black;
+}
+#txt p, .txt-left p{
+    margin-top: 5%;
+    line-height: 35px;
+    color: rgb(98, 97, 97);
+    font-size: 180%;
+} 
+#two-images .img2{
+    min-width: 100%;
+    border-radius: 150px;
+}
+#one-image .img4{
+  border-radius: 150px 150px 0px 100px;
+}
+#right-img #one-image{
+    margin-left: 3%;
+}
+#right-img #two-images{
+   margin-left: 5%;
+}
+@media only screen and (max-width: 990px) {
+     #lines-img{
+        display: none;
+     }
+}
+@media only screen and (max-width: 600px) {
+    #about-quchen{
+        margin-right: 0px;
+    }
+    #left-content{
+        margin-left: 0px;
+    }
+   #right-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0px;
+   }
+   #right-img .img3{
+    width: 100%;
+   }
+  #right-img #one-image{
+    margin-top: 5%;
+  }
+  #left-content{
+    width: 80%;
+  }
+  #txt{
+    margin-top: 20%;
+    margin-left: 5%;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+}
+.icons .right-icon{
+margin-top: 10%;
+}
+.icons .left-icon{
+   margin-left: 10%;
+}
+.btn1{
+    margin-left: 5%;
+}
+#btn-icon{
+    margin-top: 10%;
+}
+#lines-img{
+    display: none;
+}
+}
+.about-icons i{
+    font-size: 40px;
+    color: #DF3F00;
+    position: relative;
+}
+.about-icons i::after{
+    position: absolute;
+    top:  10%;
+    left: -50%;
+    content: "";
+    width: 100%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: rgba(223, 63, 0, 0.07);
+    z-index: -1;
+}
+.about-icons p{
+    font-size: 20px;
+}
+@media only screen and (max-width: 820px) {
+    .icons .right-icon{
+        margin-top: 10%;
+        margin-left: 0px;
+        margin-bottom: 10%;
+        }
+    .icons .left-icon{
+        margin-left: 5%;
+            }
+}
+.btn1 button p{
+    margin-bottom: 0px;
+}
+.btn1 button{
+    padding:20px;
+    background-color: #DF3F00;
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.6s;
+}
+.btn1 button:hover{
+    background-color: #20272e;
+}
+/* end part about quchen */
+
+
+/*start part the numbers */
+#part-numbers{
+    background-color: #DF3F00;
+    color: white;
+    margin: 0px;
+    margin-right: 0px;
+    font-family:'Forum'; 
+}
+.num{
+      padding:50px 80px 10px ; 
+}
+.num i{
+   font-size: 250%;
+   margin-bottom: 6%;
+}
+.num h4{
+    font-size: 220%;
+}
+.num p{
+    font-size: 150%;
+}
+@media only screen and (max-width: 600px){
+    #part-numbers{
+        text-align: center;
+    }
+}
+/*end part the numbers */
+
+/*start choose part */
+#choose-part{
+     padding: 1% 0% 0% 6%; 
+     font-family:'Forum';
+}
+.txt-left{
+    margin-top: 5%;
+}
+#correct-icon2{
+    margin-top: -5%;
+}
+.correct i{
+    font-size: 120%;
+    margin-top: 5%;
+    color: #DF3F00;
+}
+#card-foods{
+    box-shadow: 1px 1px 20px rgb(236, 234, 234);
+    width: 100%;
+    padding: 10%;
+}
+#card-foods i{
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 250%;
+    padding: 10%;
+}
+#card-foods h5{
+   margin-top: 15%;
+   font-size: 160%;
+   font-weight: bold;
+}
+#card-foods p{
+     font-size: 150%;
+     margin-top: 10%;
+     margin-bottom: 15%;
+}
+#card-foods a{
+    text-decoration: none;
+    color: black;
+    font-size: 120%;
+    font-weight:600;
+    transition: 0.6s;
+}
+#card-foods a:hover{
+    color: #DF3F00;
+}
+@media only screen and (max-width: 600px){
+    #choose-part{
+       text-align: left;
+    }
+
+    .btn1 button i{
+        display: none;
+    }
+    .btn9 button{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .btn9 button{
+        width: 40%;
+    }
+    .btn9 button i{
+       margin-left: 10%;
+    }
+}
+.btn9 button{
+    background-color: #DF3F00;
+    border: none;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+.btn9 button:hover{
+    background-color: #20272e;
+}
+/*end choose part */
+
+
+/* start food menu */
+#best-food{
+    background-color:rgba(223, 63, 0, 0.07) ;
+    padding: 30px 30px 5px 30px;
+    overflow: hidden;
+    font-family:'Forum';
+}
+#best-food #food-div1{
+    text-align: center;
+}
+#best-food h5{
+    font-size: 160%;
+    color: #DF3F00;
+    font-weight: bold;
+}
+#best-food h5::before{
+    content: url('https://demo.webtend.net/html/qichen/assets/images/prev-arrow.png');
+}
+#best-food h5::after{
+    content: url('	https://demo.webtend.net/html/qichen/assets/images/next-arrow.png');
+}
+#best-food p{
+     font-size: 250%;
+}
+.div-white{
+    background-color: white;
+    color: black;
+    padding: 5%;
+    
+    width: fit-content;
+}
+.div-orange{
+    width: fit-content;
+    background-color: #DF3F00;
+    color: white;
+    padding: 2%;
+}
+.chef-img1{
+    position: relative;
+    background-image: url('pic6.jpg');
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 300px;
+    background-size: contain;
+}
+.chef-img2{
+    position: relative;
+    background-image: url('pic7.jpg');
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 300px;
+    background-size: contain;
+}
+.chef-img3{
+    position: relative;
+    background-image: url('pic8.jpg');
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 300px;
+    background-size: contain;
+}
+.chef-img4{
+    position: relative;
+    background-image: url('pic9.jpg');
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 300px;
+    background-size: contain;
+}
+.chef-img1:hover ::before, .chef-img2:hover ::before,.chef-img3:hover ::before,.chef-img4:hover ::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 85%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    opacity: 0.05;
+}
+#details1 ,#details2,#details3, #details4{
+   display: none;
+}
+@media only screen and (max-width: 1210px){
+    
+        .div-white,.div-orange{
+            display: none;
+        }
+        .chef-img1:hover ::before, .chef-img2:hover ::before,.chef-img3:hover ::before,.chef-img4:hover ::before{
+            content:none;
+        }
+
+}
+ .btn5{
+    background-color: #DF3F00;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    width: 30%;
+} 
+@media only screen and (max-width: 600px){
+    .btn0 button{
+        display: none;
+    }
+    
+}
+/* end food menu */
+
+/* chefs */
+.btn0 button{
+    background-color:#DF3F00;
+    border: none;
+    width: 20%;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+.btn0 button:hover{
+    background-color: #20272e;
+}
+
+/* start video watches */
+#watch-video{
+    background-image: url('pic55.png');
+    background-repeat: no-repeat;
+    height: auto;
+    font-family:'Forum';
+}
+.icon-video{
+    position: relative;
+}
+.icon-video img{
+    position:relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.icon-video a i{
+    position: absolute;
+    color: black;
+    left: 50%;
+    top: 50%;
+    padding: 2%;
+    z-index: 1;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #DF3F00;
+    background-color: white;
+
+}
+.btn10 button{
+    background-color: #20272e;
+    border-radius: 20px;
+    transition: 0.6s;
+    border: none;
+} 
+.btn10 button:hover{
+    background-color: #DF3F00;
+}
+@media only screen and (max-width: 1000px){
+    .btn10 button{
+        width: 50%;
+    }
+    .btn10 button i{
+       margin-left: 10%;
+    }
+}
+/* end video watches */
+
+/* start food review */
+#food-review{
+   padding: 4%;
+   font-family:'Forum';
+}
+#parag-review p{
+    font-size: 35px;
+}
+.icons-review a{
+    text-decoration: none;
+    background-color:#20272e;
+    color: white;
+    padding: 20%;
+    transition: 0.6s;
+}
+.icons-review a:hover{
+    background-color: #DF3F00;
+}
+.icons-review a i{
+    font-size: 200%;
+}
+@media only screen and (max-width: 1210px){
+    .icons-review a{
+        display: none;
+    }
+}
+.cards-review{
+    border: 1px solid gainsboro;
+    padding: 2%;
+    text-align: center;
+    margin-left: 5%;
+}
+.cards-review i{
+    color: #DF3F00;
+}
+/* end food review */
+
+/* start collection of images */
+#images{
+    background-color:rgba(223, 63, 0, 0.07) ;
+    padding: 5%;
+}
+#images .image-food{
+    opacity: 0.6;
+    transition: 0.6s;
+}
+#images .image-food:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+    #images .no-img{
+        display: none;
+    }
+    #images .image-food{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 990px){
+    #images .image-food{
+        text-align: center;
+        margin-top: 5%;
+    }
+}  
+/* end collection of images */
+
+/* start footer */
+#footer{
+    background-color: #171c20;
+    color: white;
+    padding: 4% ;
+    font-family:'Forum';
+}
+#footer img{
+  background-color: #DF3F00;
+  padding: 2%;
+}
+#footer input{
+    border: none;
+    padding: 4%;
+    border-radius: 10px;
+    width: 80%;
+}
+#footer p{
+    color: rgb(142, 142, 142);
+    font-size: 160%;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+    font-size: 130%;
+    transition: 0.6s;
+}
+#footer a:hover{
+     color: #DF3F00;
+}
+/* end footer */
+
+.btn
+{
+    color:white;
+    background-color: #DF3F00;
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 5%;
+    margin-left: -70%;
+    transition: 0.6s;
+}
+.btn:hover{
+    background-color: #171c20;
+    color: white;
+}
+.spanWordOne
+{
+    font-size: 20px;
+    margin-right: 20px;
+    
+}
+.spanWordTwo
+{
+    font-size: 20px;
+}
+ @media only screen and (max-width: 600px){
+    #parag-review{
+       text-align: center;
+    }
+} 
+@media only screen and (max-width: 825px){
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
+    .icons .right-icon{
+        padding: 5%;
+    }
+   
+}
+@media only screen and (max-width: 992px){
+    .btn{
+       margin-left: 1%;
+    }
+}
+@media only screen and (max-width: 767px){
+  .num{
+    text-align: center;
+  }
+  #card-foods{
+    text-align: center;
+}
+}
+@media only screen and (max-width: 1000px){
+   .cards-review{
+    margin-top: 5%;
+   }
+}
+@media only screen and (max-width: 1200px){
+     .no-btn{
+        display: none;
+     }
+}
+
+
+
+
